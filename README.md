@@ -1,4 +1,4 @@
-## GoWebAF
+# Create a banking chatbot with FAQ discovery, anger detection and natural language understanding
 
 [![](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://bluemix.net)
 ![Platform](https://img.shields.io/badge/platform-go-lightgrey.svg?style=flat)
