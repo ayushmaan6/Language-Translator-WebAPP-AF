@@ -16,6 +16,17 @@
 This is a Web Application which is built on GO programming language to translate text in english language to other supported by the IBM Watson Language Translator service. 
 
 
+#### 1. Architecture
+
+#### 2. Flow
+
+#### 3. Included Components
+*[Watson Language Translator](https://www.ibm.com/cloud/watson-language-translator): Language Translator translates text from one language to another. Take news from across the globe and present it in your language. Communicate with your customers in their own language, and more.
+
+#### 4. Included Technologies
+*[Go](https://golang.org/): Go is an open source programming language that makes it easy to build simple, reliable, and efficient software
+*HTML & CSS
+
 <a name="requirements"></a>
 ### Requirements
 #### IBM Cloud tools setup (optional)
