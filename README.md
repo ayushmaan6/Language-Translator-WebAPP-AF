@@ -8,7 +8,7 @@
 * [Summary](#summary)
 * [Requirements](#requirements)
 * [Configuration](#configuration)
-* [Run](#run)
+* [Deploy](#Deploy)
 
 <a name="summary"></a>
 ### Summary
@@ -52,10 +52,10 @@ Change to the directory where your code is located.
 Edit the server.go file Line 71 & 73 with the API key and the URL.
 
 ```
-cd Language-Translator-WebAPP-Using-GO'
+cd Language-Translator-WebAPP-Using-GO
 nano server.go
 ``` 
-
+### Deploy
 
 
 
