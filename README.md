@@ -29,17 +29,17 @@ Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/
 
 The project contains IBM Cloud specific files that are used to deploy the application as part of an IBM Cloud.
 
-####1. Clone the repo
+#### 1. Clone the repo
 Clone the Language-Translator-WebAPP-Using-GO locally. In a terminal, run:
 
 'git clone https://github.com/ayushmaan6/Language-Translator-WebAPP-Using-GO.git'
 
-####2. Create Watson services with IBM Cloud
+#### 2. Create Watson services with IBM Cloud
 Create the following services:
 
 * [Language Translator](https://console.bluemix.net/catalog/services/language-translator)
 
-####3. Configure credentials
+#### 3. Configure credentials
 Collect the credentials for the IBM Cloud Language Translator service.
 
 Find the service in your IBM Cloud Dashboard.
@@ -47,12 +47,14 @@ Click on the service.
 Hit Manage in the left sidebar menu.
 Copy the API Key and URL.
 
-Edit the server.go file Line 71 & 73 with the API key and the URL.
-Change to the directory where your code is located.
 
-'cd Language-Translator-WebAPP-Using-GO
- nano server.go'
- 
+Change to the directory where your code is located.
+Edit the server.go file Line 71 & 73 with the API key and the URL.
+
+```
+cd Language-Translator-WebAPP-Using-GO'
+nano server.go
+``` 
 
 
 
