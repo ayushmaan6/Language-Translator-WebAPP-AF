@@ -24,8 +24,9 @@ This is a Web Application which is built on GO programming language to translate
 *[Watson Language Translator](https://www.ibm.com/cloud/watson-language-translator): Language Translator translates text from one language to another. Take news from across the globe and present it in your language. Communicate with your customers in their own language, and more.
 
 #### 4. Included Technologies
-*[Go](https://golang.org/): Go is an open source programming language that makes it easy to build simple, reliable, and efficient software
-*HTML & CSS
+* [Go](https://golang.org/): Go is an open source programming language that makes it easy to build simple, reliable, and efficient software
+
+* HTML & CSS
 
 <a name="requirements"></a>
 ### Requirements
@@ -67,8 +68,24 @@ cd Language-Translator-WebAPP-Using-GO
 nano server.go
 ``` 
 ### Deploy
+#### 1. Connect and log in to IBM Cloud.
 
+````
+ibmcloud api https://api.ng.bluemix.net
+ibmcloud login -u (your IBM login id) -o devexuae -s Alex
+````
+If you are using a federated ID, use the -sso option.
+````
+ibmcloud login  -o devexuae -s Alex -sso
+````
+Note: You must add single or double quotes around username, org_name, and space_name if the value contains a space, for example, -o "my org".
 
+#### 2. From your_new_directory, redeploy your app to IBM Cloud by using the ibmcloud app push command. For more information about the ibmcloud app push command, see Uploading your application.
+
+`````
+bluemix app push Language-Translator-WebAPP-Using-GO
+`````
+Access your app by browsing to the URL shown in the output.
 
 
 
