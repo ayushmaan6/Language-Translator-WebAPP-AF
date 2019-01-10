@@ -1,4 +1,4 @@
-# Create a banking chatbot with FAQ discovery, anger detection and natural language understanding
+# Create a simple Language Translator Web-App using Go and Watson Language Translator service
 
 [![](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://bluemix.net)
 ![Platform](https://img.shields.io/badge/platform-go-lightgrey.svg?style=flat)
@@ -13,75 +13,49 @@
 <a name="summary"></a>
 ### Summary
 
-This is a blank Go application that provides a basic foundation for deploying to IBM Cloud.
+This is a Web Application which is built on GO programming language to translate text in english language to other supported by the IBM Watson Language Translator service. 
 
-#### Gopkg.toml
-
-Ensure that all of your `dep` dependencies are stored inside of `Gopkg.toml`.
-
-#### cli-config.yml
-
-Update the following commands in `cli-config.yml` to match the commands you use in your project:
-* `test-cmd`: The command to execute tests for the code in the tools container<br/>
-(i.e. `go test ./...`)
-* `build-cmd-debug`: The command to build the code and docker image for `DEBUG` mode<br/>
-(i.e. `go build` to ensure that the application compiles cleanly)
-* `debug-cmd`: The command to execute debug of the code in the tools container using [delve](https://github.com/derekparker/delve)<br/>
-(i.e. `dlv debug --headless --listen=0.0.0.0:8181`)
-
-<a name="enablement"></a>
-### IBM Cloud Enablement
 
 <a name="requirements"></a>
 ### Requirements
-#### Local Development Tools Setup (optional)
+#### IBM Cloud tools setup (optional)
 
-- If you don't already have it, install [Go](https://golang.org/dl/)
-- Install [dep](https://github.com/golang/dep)
+Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) 
 
-#### IBM Cloud development tools setup (optional)
-
-1. Install [IBM Cloud Developer Tools](https://console.bluemix.net/docs/cli/idt/setting_up_idt.html#add-cli) on your machine  
-2. Install the dev plugin: `ibmcloud plugin install dev`
 
 
 <a name="configuration"></a>
 ### Configuration
 
-The project contains IBM Cloud specific files that are used to deploy the application as part of an IBM Cloud DevOps flow. The `.bluemix` directory contains files used to define the IBM Cloud toolchain and pipeline for your application. The `manifest.yml` file specifies the name of your application in IBM Cloud, the timeout value during deployment, and which services to bind to.
+The project contains IBM Cloud specific files that are used to deploy the application as part of an IBM Cloud.
 
-Credentials are either taken from the VCAP_SERVICES environment variable if in IBM Cloud, or from a config file if running locally.
+####1. Clone the repo
+Clone the Language-Translator-WebAPP-Using-GO locally. In a terminal, run:
 
-#### Using IBM Cloud development CLI
+'git clone https://github.com/ayushmaan6/Language-Translator-WebAPP-Using-GO.git'
 
-The IBM Cloud development plugin makes it easy to compile and run your application if you do not have all of the tools installed on your computer yet. Your application will be compiled with Docker containers. To compile and run your app, run:
+####2. Create Watson services with IBM Cloud
+Create the following services:
 
-```bash
-ibmcloud dev build
-ibmcloud dev run
-```
+* [Language Translator](https://console.bluemix.net/catalog/services/language-translator)
 
-#### Using your local development environment
+####3. Configure credentials
+Collect the credentials for the IBM Cloud Language Translator service.
 
-In order for Go applications to run locally, they must be placed in the correct file path. The application must exist in `$GOPATH/src/gowebaf`
+Find the service in your IBM Cloud Dashboard.
+Click on the service.
+Hit Manage in the left sidebar menu.
+Copy the API Key and URL.
 
-To run your application locally:
+Edit the server.go file Line 71 & 73 with the API key and the URL.
+Change to the directory where your code is located.
 
-```bash
-dep ensure
-go run server.go
-```
+'cd Language-Translator-WebAPP-Using-GO
+ nano server.go'
+ 
 
-Once the Go toolchain has been installed, you can compile a Go project with:
 
-```bash
-go install
-```
 
-Your sources will be compiled to your `$GOPATH/bin` directory.
 
-##### Endpoints
 
-Your application is running at: `http://localhost:8080` in your browser.
 
-- Health endpoint: `/health`
