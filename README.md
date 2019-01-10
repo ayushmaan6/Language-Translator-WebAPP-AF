@@ -21,7 +21,7 @@ This is a Web Application which is built on GO programming language to translate
 #### 2. Flow
 
 #### 3. Included Components
-*[Watson Language Translator](https://www.ibm.com/cloud/watson-language-translator): Language Translator translates text from one language to another. Take news from across the globe and present it in your language. Communicate with your customers in their own language, and more.
+[Watson Language Translator](https://www.ibm.com/cloud/watson-language-translator): Language Translator translates text from one language to another. Take news from across the globe and present it in your language. Communicate with your customers in their own language, and more.
 
 #### 4. Included Technologies
 * [Go](https://golang.org/): Go is an open source programming language that makes it easy to build simple, reliable, and efficient software
@@ -43,8 +43,9 @@ The project contains IBM Cloud specific files that are used to deploy the applic
 
 #### 1. Clone the repo
 Clone the Language-Translator-WebAPP-Using-GO locally. In a terminal, run:
-
-'git clone https://github.com/ayushmaan6/Language-Translator-WebAPP-Using-GO.git'
+````
+git clone https://github.com/ayushmaan6/Language-Translator-WebAPP-Using-GO.git
+````
 
 #### 2. Create Watson services with IBM Cloud
 Create the following services:
