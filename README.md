@@ -19,7 +19,11 @@ This is a Web Application which is built on GO programming language to translate
 #### 1. Architecture
 
 #### 2. Flow
-
+1. The user submits the text to be translated using the UI
+2. The GO backend forwards the text to be translated to Language Translator
+3. The input is processed by Language Translator and translated to the target language
+4. The translated text is forwarded to the GO web app
+5. The translated text is displayed on the web UI
 #### 3. Included Components
 [Watson Language Translator](https://www.ibm.com/cloud/watson-language-translator): Language Translator translates text from one language to another. Take news from across the globe and present it in your language. Communicate with your customers in their own language, and more.
 
