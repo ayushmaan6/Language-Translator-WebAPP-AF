@@ -17,7 +17,7 @@ This is a Web Application which is built on GO programming language to translate
 
 
 #### 1. Architecture
-
+![Architecture](https://github.com/ayushmaan6/Language-Translator-WebAPP-Using-GO/blob/master/Architecture.PNG)
 #### 2. Flow
 1. The user submits the text to be translated using the UI
 2. The GO backend forwards the text to be translated to Language Translator
